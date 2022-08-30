@@ -147,15 +147,6 @@ odoo.define('bi_pos_scan_mobile_barcode.ScanQrCode', function (require) {
             html5QrcodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 });
             html5QrcodeScanner.render(onScanSuccess,onScanFailure);
 
-            $(".resume").click(function() {
-              html5QrcodeScanner.resume();
-            });
-
-
-            $(".pause").click(function() {
-                html5QrcodeScanner.pause();
-              });
-
         }
     }
 
@@ -167,9 +158,6 @@ odoo.define('bi_pos_scan_mobile_barcode.ScanQrCode', function (require) {
         confirmText: 'Ok',
         cancelText: 'Close',
         title: 'Scanning QrCode',
-        ResumeText: 'Resume',
-        PauseText : 'Pause'
-
     };
 
     return scanqrcode;

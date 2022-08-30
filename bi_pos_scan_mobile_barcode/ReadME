@@ -1,3 +1,6 @@
 
 Version 14.0.0.1 : (18/08/22)
 		- Solved issue scan using file GUI is not defined solve it.
+
+Version 14.0.0.2 : (25/08/22)
+		- Remove push and resume button from popup and resize scan qr code popup change css.
